@@ -46,7 +46,7 @@ function render(){
  panel.append(node('p','',t.time+': '+now.toLocaleTimeString(locale,{hour:'2-digit',minute:'2-digit'})));
  panel.append(node('p','',t.site+': '+(location.hostname||'local file')));
  panel.append(node('p','hint',t.help));
- panel.append(node('p','companion-version','v0.3.0'));
+ panel.append(node('p','companion-version','v0.3.3'));
 }
 function showWarning(){
  view='exit';const t=words[lang];panel.replaceChildren();panel.append(node('h2','',t.warningTitle));

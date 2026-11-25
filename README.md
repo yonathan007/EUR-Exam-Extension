@@ -1,4 +1,4 @@
-# EUR Exam Companion v0.2.7 (standalone)
+# EUR Exam Companion v0.3.3 (GitHub Edition)
 
 Afzonderlijke Chrome-extensie voor de EUR Exam Launcher en geconfigureerde examenwebsites. **De Exam Launcher is niet gewijzigd.**
 
@@ -45,3 +45,14 @@ Op de EUR Exam Launcher verschijnt het batterijpercentage direct links naast Too
 
 ## v0.3.1
 Verbergt de lege batterij-indicator bij ontbrekende Battery Status API. Als navigator.getBattery() niet beschikbaar is, kan de extensie het percentage niet betrouwbaar tonen; ChromeOS-beleid/browsercontext controleren. Launcher ongewijzigd.
+
+## v0.3.3 — GitHub
+Gebaseerd op v0.3.1. Update-URL toegevoegd en zichtbaar versienummer gecorrigeerd. Geen sleutel of buildscript meegeleverd.
+
+1. Upload de uitgepakte bestanden naar de root van de repository EUR-Exam-Companion.
+2. Activeer Settings > Pages > Deploy from a branch > main / (root).
+3. Voor lokale tests: Load unpacked via chrome://extensions.
+4. Voor beheerde installatie: publiceer een ondertekend CRX-bestand en maak updates.xml met de werkelijke app-ID, CRX-URL en versie 0.3.3. Gebruik de update-URL uit het manifest. Deze bestanden zijn niet meegeleverd; GitHub Pages alleen installeert geen extensie.
+5. Test of Custom URL beschikbaar is voor de specifieke kioskwebapp.
+
+Publiceer nooit private sleutels. De batterijbeperking uit v0.3.1 blijft bestaan.

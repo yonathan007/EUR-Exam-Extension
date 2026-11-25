@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "EUR Exam Companion",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "description": "Standalone Tools-menu met batterijstatus en waarschuwingen bij 15% en 5%, waar ondersteund.",
   "content_scripts": [
     {
@@ -27,5 +27,6 @@
       "run_at": "document_idle",
       "all_frames": false
     }
-  ]
+  ],
+  "update_url": "https://yonathan007.github.io/EUR-Exam-Companion/updates.xml"
 }
