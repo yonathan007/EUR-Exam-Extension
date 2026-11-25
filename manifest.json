@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "EUR Exam Companion",
+  "version": "0.3.1",
+  "description": "Standalone Tools-menu met batterijstatus en waarschuwingen bij 15% en 5%, waar ondersteund.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://engine.surfconext.nl/*",
+        "https://ans.app/*",
+        "https://*.ans.app/*",
+        "https://erasmusmc.testvision.nl/*",
+        "https://ivtg.testvision.nl/*",
+        "https://windows.cloud.microsoft/*",
+        "http://noa-online.net/*",
+        "https://noa-online.net/*",
+        "http://localhost/*",
+        "https://localhost/*",
+        "http://127.0.0.1/*",
+        "https://127.0.0.1/*",
+        "file:///*",
+        "https://yonathan007.github.io/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
